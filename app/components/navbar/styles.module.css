@@ -19,7 +19,7 @@
 .navLink {
   font-size: var(--fs-link);
   line-height: var(--lh-link);
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: none;
   color: var(--color-secondary-gray);
   transition: color 0.2s ease;
