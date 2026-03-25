@@ -1,6 +1,7 @@
 import { Fragment } from "react/jsx-runtime";
 import { Hero, Packages } from "./components";
 import Team from "./components/team";
+import Newsletter from "./components/newsletter";
 
 export function meta() {
   return [
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Packages />
       <Team />
+      <Newsletter />
     </Fragment>
   )
 }

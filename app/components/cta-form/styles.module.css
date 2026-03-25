@@ -1,0 +1,54 @@
+.inputForm {
+  max-width: 688px;
+  margin: 0 auto;
+  display: flex;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+}
+
+.emailInput {
+  flex-grow: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: var(--color-secondary-gray);
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.inputForm button {
+  padding: 15px 30px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  text-transform: none;
+}
+
+.emailInput::placeholder {
+  color: #a0a0a0;
+}
+
+.successMessage {
+  color: var(--color-accent-green);
+  margin-top: 8px;
+}
+
+.errorMessage {
+  color: var(--color-accent-red);
+  margin-top: 8px;
+}
+
+@media (max-width: 576px) {
+  .inputForm {
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+  }
+
+  .emailInput {
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+  }
+}

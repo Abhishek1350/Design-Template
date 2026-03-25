@@ -1,0 +1,15 @@
+.section {
+  background-color: var(--color-light-bg);
+  text-align: center;
+  padding: 160px 0;
+}
+
+.header {
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.description {
+  max-width: 500px;
+  margin: auto;
+}
