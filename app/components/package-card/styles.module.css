@@ -1,0 +1,36 @@
+.card {
+  height: 100%;
+  border: none;
+  padding: 35px 40px;
+  text-align: left;
+  gap: 20px;
+}
+
+.iconBox {
+  width: 70px;
+  height: 76px;
+  background-color: var(--color-accent-green);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImage {
+  width: 32px;
+}
+
+.cardTitle {
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+.cardRedLine {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent-orange);
+}
+
+.cardDescription {
+  color: var(--color-secondary-gray);
+}

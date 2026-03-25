@@ -1,0 +1,13 @@
+.section {
+  padding: 112px 0;
+}
+
+.header {
+  gap: 10px;
+  margin-bottom: 112px;
+}
+
+.description {
+  color: var(--color-secondary-gray);
+  max-width: 450px;
+}

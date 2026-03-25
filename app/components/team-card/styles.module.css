@@ -1,0 +1,52 @@
+.card {
+  height: 100%;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.cardImgWrapper {
+  width: 100%;
+  max-height: 231px;
+}
+
+.cardImgWrapper img {
+  max-width: 100%;
+}
+
+.cardBody {
+  padding: 30px;
+  gap: 10px;
+}
+
+.cardTitle {
+  color: var(--color-dark-navy);
+}
+
+.cardProfession {
+  font-size: 12px;
+  color: var(--color-secondary-gray);
+}
+
+.socialIcons {
+  gap: 15px;
+  margin-top: auto;
+}
+
+.socialLink {
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  opacity: 0.7;
+}
+
+.socialIconImage {
+  width: 24px;
+  height: 24px;
+}
