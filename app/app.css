@@ -1,15 +1,232 @@
-@import "tailwindcss";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
+  --color-light-bg: #fdf3f1;
+  --color-accent-peach: #febc94;
+  --color-dark-navy: #252b42;
+  --color-accent-red: #a01a10;
+  --color-accent-green: #96bb7b;
+  --color-accent-green-hover: #86a96b;
+  --color-secondary-gray: #737373;
+
+  --fs-h1: 58px;
+  --lh-h1: 80px;
+
+  --fs-h2: 40px;
+  --lh-h2: 50px;
+
+  --fs-h3: 24px;
+  --lh-h3: 32px;
+
+  --fs-h4: 20px;
+  --lh-h4: 30px;
+
+  --fs-h5: 16px;
+  --lh-h5: 24px;
+
+  --fs-h6: 14px;
+  --lh-h6: 24px;
+
+  --fs-paragraph: 14px;
+  --lh-paragraph: 20px;
+
+  --fs-link: 14px;
+  --lh-link: 24px;
+
+  --fs-btn: 14px;
+  --lh-btn: 22px;
 }
 
-html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-secondary-gray);
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+.container {
+  max-width: 1045px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.large-container {
+  max-width: 1140px !important;
+}
+
+/* Global Reusable Utilities */
+.global-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-tag {
+  color: var(--color-accent-green);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.btn-custom {
+  font-size: var(--fs-btn);
+  line-height: var(--lh-btn);
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary-custom {
+  background-color: var(--color-accent-green);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--color-accent-green-hover);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--color-accent-green);
+  border: 1px solid var(--color-accent-green);
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-accent-green);
+  color: #fff;
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+h4,
+.h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+h5,
+.h5 {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-h5);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+h6,
+.h6 {
+  font-size: var(--fs-h6);
+  line-height: var(--lh-h6);
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+p,
+.paragraph {
+  font-size: var(--fs-paragraph);
+  line-height: var(--lh-paragraph);
+  font-weight: 400;
+}
+
+a,
+.link {
+  font-size: var(--fs-link);
+  line-height: var(--lh-link);
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.btn-custom {
+  font-size: var(--fs-btn);
+  line-height: var(--lh-btn);
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom {
+  background-color: var(--color-accent-green);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--color-accent-green-hover);
+  color: #fff;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--color-accent-green);
+  border: 1px solid var(--color-accent-green);
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--color-accent-green);
+  color: #fff;
+}
+
+.section-tag {
+  color: var(--color-accent-green);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.bg-light-peach {
+  background-color: var(--color-light-bg);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fs-h1: 40px;
+    --lh-h1: 55px;
+    --fs-h2: 32px;
+    --lh-h2: 42px;
   }
 }
