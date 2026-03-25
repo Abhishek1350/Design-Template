@@ -1,0 +1,72 @@
+.section {
+  padding: 160px 0;
+}
+
+
+.rowLeft {
+  gap: 35px;
+}
+
+.redLine {
+  width: 94px;
+  height: 7px;
+  background-color: var(--color-accent-orange);
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-secondary-gray);
+  max-width: 400px;
+}
+
+.link {
+    color: var(--color-accent-green);
+}
+
+.link svg {
+  transition: transform 0.2s ease;
+}
+
+.link:hover svg {
+  transform: translateX(5px);
+}
+
+.card {
+  height: 100%;
+  border: none;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  padding: 35px 40px;
+  text-align: left;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.iconBox {
+  width: 70px;
+  height: 76px;
+  background-color: var(--color-accent-green);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImage {
+  width: 32px;
+}
+
+.cardTitle {
+  font-weight: 700;
+  color: var(--color-dark-navy);
+}
+
+.cardRedLine {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent-orange);
+}
+
+.cardDescription {
+  color: var(--color-secondary-gray);
+}

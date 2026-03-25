@@ -1,5 +1,5 @@
 import { Fragment } from "react/jsx-runtime";
-import { Hero } from "./components";
+import { Hero, Packages } from "./components";
 
 export function meta() {
   return [
@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <Fragment>
       <Hero />
+      <Packages />
     </Fragment>
   )
 }
