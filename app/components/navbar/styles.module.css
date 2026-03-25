@@ -1,0 +1,50 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.navLink {
+  font-size: var(--fs-link);
+  line-height: var(--lh-link);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-secondary-gray);
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-dark-navy);
+}
+
+.loginLink {
+  font-size: var(--fs-link);
+  line-height: var(--lh-link);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-accent-green);
+  transition: color 0.2s ease;
+}
+
+.loginLink:hover {
+  color: var(--color-accent-green-hover);
+}
+
+.navJoinBtn {
+  padding: 15px 25px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  border-radius: 5px !important;
+}
