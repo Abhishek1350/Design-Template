@@ -31,9 +31,8 @@ export function Navbar() {
     }
 
     return (
-        <nav
-            className={`navbar navbar-expand-lg  ${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}
-        >
+        <nav className={`navbar navbar-expand-lg py-4 ${styles.navbar} ${isScrolled ? styles.scrolled : ""} ${isOpen ? styles.open : ""}`} >
+
             <div className="container">
                 <Link
                     className="navbar-brand h3 mb-0"

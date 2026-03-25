@@ -12,8 +12,8 @@
 .scrolled {
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .navLink {
@@ -47,4 +47,18 @@
   font-size: 14px !important;
   font-weight: 700 !important;
   border-radius: 5px !important;
+}
+
+
+@media (max-width: 991px) {
+  .open {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar :global(.navbar-collapse.show) {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
 }
